@@ -56,7 +56,6 @@ This project aims to demonstrate the implementation of autoscaling to improve th
 
 ### Update packages and install dependencies:
 
-```sh
 sudo yum update -y
 sudo yum install python3 git -y
 
@@ -88,6 +87,7 @@ nohup streamlit run app.py --server.port 8501 --server.headless true &
 
 ### Verify the application:
 Access the application at http://your-ec2-public-dns:8501
+
 ## Setting Up Load Balancer
 
 ### Create Target Group
