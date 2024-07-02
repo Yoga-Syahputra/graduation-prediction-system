@@ -54,31 +54,43 @@ This project aims to demonstrate the implementation of autoscaling to improve th
 
 ## Install Required Software on EC2
 
+### Update packages and install dependencies:
+
+```sh
+sudo yum update -y
+sudo yum install python3 git -y
+```
+
 ### Install pip and virtualenv:
 ```sh
 sudo python3 -m ensurepip
 sudo pip3 install --upgrade pip
 sudo pip3 install virtualenv
+```
 
 ### Clone the project repository:
 ```sh
 git clone https://github.com/your-repo/graduation-prediction-system.git
 cd graduation-prediction-system
+```
 
 ### Set up a virtual environment:
 ```sh
 virtualenv venv
 source venv/bin/activate
+```
 
 ### Install project dependencies:
 ```sh
 pip install -r requirements.txt
+```
 
 ## Deploy Streamlit Application
 
 ### Run the Streamlit app:
 ```sh
 nohup streamlit run app.py --server.port 8501 --server.headless true &
+```
 
 ### Verify the application:
 Access the application at http://your-ec2-public-dns:8501
@@ -136,10 +148,12 @@ Access the application at http://your-ec2-public-dns:8501
 
    ```sh
    pip install locust
+   ```
 
 ## Run Locust
 ```sh
 nohup locust -f locustfile.py --host http://uat-load-balancer-1410363820.ap-southeast-2.elb.amazonaws.com --web-host 0.0.0.0 &
+```
 
 ## Access Locust Web Interface
 
