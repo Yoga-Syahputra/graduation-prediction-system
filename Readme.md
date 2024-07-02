@@ -54,11 +54,6 @@ This project aims to demonstrate the implementation of autoscaling to improve th
 
 ## Install Required Software on EC2
 
-### Update packages and install dependencies:
-
-sudo yum update -y
-sudo yum install python3 git -y
-
 ### Install pip and virtualenv:
 ```sh
 sudo python3 -m ensurepip
