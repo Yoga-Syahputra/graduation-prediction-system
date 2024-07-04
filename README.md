@@ -167,7 +167,7 @@ nohup locust -f locustfile.py --host http://your-load-balancer-url --web-host 0.
 **Configure number of users and spawn rate**:
 - **Number of users**: [adjustable]
 - **Spawn rate**: [insert the number here] user per second
-- **Host**: `http://uat-load-balancer-1410363820.ap-southeast-2.elb.amazonaws.com`
+- **Host**: `http://<load-balancer-url>`
 
 ## Monitoring and Autoscaling
 
