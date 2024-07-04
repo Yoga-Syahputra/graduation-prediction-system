@@ -152,7 +152,8 @@ Access the application at http://your-ec2-public-dns:8501
 
 ## Run Locust
 ```sh
-nohup locust -f locustfile.py --host http://uat-load-balancer-1410363820.ap-southeast-2.elb.amazonaws.com --web-host 0.0.0.0 &
+nohup locust -f locustfile.py --host http://your-load-balancer-url --web-host 0.0.0.0 &
+
 ```
 
 ## Access Locust Web Interface
@@ -164,8 +165,8 @@ nohup locust -f locustfile.py --host http://uat-load-balancer-1410363820.ap-sout
 ## Locust Configuration
 
 **Configure number of users and spawn rate**:
-- **Number of users**: 10
-- **Spawn rate**: 1 user per second
+- **Number of users**: [adjustable]
+- **Spawn rate**: [insert the number here] user per second
 - **Host**: `http://uat-load-balancer-1410363820.ap-southeast-2.elb.amazonaws.com`
 
 ## Monitoring and Autoscaling
