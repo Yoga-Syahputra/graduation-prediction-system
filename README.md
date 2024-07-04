@@ -70,7 +70,7 @@ sudo pip3 install virtualenv
 
 ### Clone the project repository:
 ```sh
-git clone https://github.com/your-repo/graduation-prediction-system.git
+git clone https://github.com/Yoga-Syahputra/graduation-prediction-system.git
 cd graduation-prediction-system
 ```
 
